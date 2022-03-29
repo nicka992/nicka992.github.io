@@ -1,0 +1,308 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background: #333333;
+}
+.logo{
+    color: #fff;
+    font-size: 22px;
+    line-height: 50px;
+    padding-left: 200px;
+    float: left;
+}
+.menu{
+    float: left;
+    padding-left: 320px;
+} 
+.menu li{
+    float: left;
+    line-height: 50px;
+    color: #fff;
+    margin-right: 40px; 
+    font-size: 14px;
+    font-weight: bold;
+}
+.main {
+    width: 100%;
+    height: calc(100% - 50px);
+    background: url(../img/program.png) 100% 100%/auto 100% no-repeat, 
+        url(../img/fon-1.jpg) center/cover no-repeat;
+}
+.titel_container{
+    float: left;
+    margin: 90px 0px 0px 140px;
+    text-align: center
+}
+.titel_container h1{
+    font-size: 50px;
+    font-weight: bold;    
+}
+.titel_container h4{
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;    
+}
+.titel_container input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #999;
+    background: none;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 0px 16px;
+    margin: 50px 10px 0px 10px;
+}
+.menu_page{
+    padding: 35px 0px 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.text{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+                                                        /* ОБО МНЕ */
+.about_me{
+    width: 100%;
+    height: 500px;
+    background: #f3f7f7;
+    text-align: center;
+}
+.foto_1{
+    padding: 35px;
+}
+.text_1{
+    margin: 0 25% 55px;
+    font-size: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+.text_2{
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+.about_me input{
+    border: 2px solid #999;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.about_me input:hover {
+    background-color: #e6e7eb;
+    box-shadow: 1px 1px 1px 1px #dcdde1;
+}
+.about_me input:active {
+  background-color: #e6e7eb;
+  box-shadow: 0 1px #dcdde1;
+  transform: translateY(0.5px);
+}
+                                                        /* ЧТО Я УМЕЮ */
+.know_how{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    background: url(../img/fon-2.jpg) 100% 100%;                
+}
+
+#menu_0 { 
+    margin-left: 150px;
+    
+}
+
+#menu_1 { 
+        width:22%;
+        padding: 25px;
+        float:left; 
+        text-align:center;
+        }
+
+#menu_1 img{
+     margin:65px 0 30px;
+     height: 38px;
+}
+  
+#menu_1 b{
+    color:#cf7600;
+}
+
+                                                 /*КЕЙСЫ */
+.CASE{
+    width: 100%;
+    height: 640px;
+    text-align: center;    
+}
+
+.text_CASE1{
+    font-size: 12px;
+    text-align: left;
+    font-weight: bold;
+    padding: 40px 100px;
+    float: left;
+}
+
+.text_CASE1 b{
+    font-size: 18px;    
+}
+
+.text_CASE2{
+    font-size: 12px;
+    text-align: left;
+    font-weight: bold;
+    padding: 40px 100px;
+}
+
+.text_CASE2 b{
+    font-size: 18px;   
+}
+
+.text_CASE1 button{
+    background-color: #63b5ae;
+    color:#ffffff;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.text_CASE1 button:hover{
+    background-color: #3ca198;
+    box-shadow: 1px 1px 1px 1px #dcdde1;
+}
+
+.text_CASE1 button:active{
+    color:#3ca198;
+    background-color: #ffffff;
+    box-shadow: 0 1px #dcdde1;
+    transform: translateY(1px 1px);
+}
+
+                                            /*Расчет стоимости*/
+.cost{      
+    margin-left: auto;
+    margin-right: auto;
+    height: 440px;
+    width: 500px; 
+    text-align: left;
+}
+
+.menu_page1{
+    text-align:center;
+    font-size: 24px;
+    font-weight: bold;
+    padding:15px 0;
+}
+
+.cost_m{
+    height: 80px;
+}
+
+.cost_m h4{
+    font-size: 16px;
+    font-weight: 600;
+    padding:15px 0;
+}
+
+.cost img{
+    width: 100%; 
+     height: 2px;
+}
+
+.Price1{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;  
+}
+
+                                                 /*НЕМНОГО СТАТИСТИКИ*/
+.STATISTICS{
+    width: 100%;   
+    height: 400px;
+    text-align: center;
+    background: url(../img/fon-3.jpg) 100% 100%; 
+}
+.STAT_1{
+    margin-left: 300px;   
+}
+
+.text_3{ 
+        width:180px;
+        float:left;         
+}
+
+.text_3 img{  
+    margin:65px 0 30px;
+    height: 32px;
+}
+
+.text_3 h2{
+    padding: 15px 0;
+    font-size:xx-large;
+    font-weight: 900;    
+}
+
+                                                 /*Отзыв*/
+.REVIEWS{
+    width: 100%;
+    height: 450px;
+    text-align: center;
+}
+    
+.menu_page_im img{
+    margin: 50px 0 35px;    
+}
+
+                                                 /*Отзыв*/
+.map{
+    width: 100%; 
+}
+
+                                                /*Контакты*/
+.CONTACTS{
+    color:#ffffff;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    background: url(../img/fon-4.jpg) 100% 100%; 
+}
+
+.text_4{ 
+        width:180px;
+        float:left; 
+        margin: 50px 0 35px; 
+}
+
+.text_blok{
+margin-left: 400px;}
+
+.text_5{
+    margin: 10px 0;     
+}
+
+.input_2 input{
+    color:#ffffff;
+    text-align: center;
+    border: 1px solid #ffffff;
+    background: none;
+    border-radius: 5px;
+    padding: 5px 16px;
+    margin: 20px 0;
+}
+
+.mes{
+    margin: 150px 0 0 0; 
+}
+
+.fb img{margin: 0 25px;}
+
+
+.text_7{
+    text-align: center;
+    padding: 7px;
+    width: 100%;
+    height: 30px;
+    background: #354051;    
+}
