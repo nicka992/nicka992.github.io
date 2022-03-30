@@ -56,6 +56,11 @@ nav{
     padding: 0px 16px;
     margin: 50px 10px 0px 10px;
 }
+    
+.titel_container input:hover {
+    border: 2px solid #555;
+    box-shadow: 0 0 1px 1px #dcdde1;    
+}
 .menu_page{
     padding: 35px 0px 15px;
     font-size: 24px;
