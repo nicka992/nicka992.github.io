@@ -9,6 +9,7 @@
     <title> Никачев Павел веб-разработчик </title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="animate.style.css">
 </head>
 
 <body>
@@ -18,29 +19,44 @@
             
             <div class="menu">
                <ul>
-                   <li>ОБО МНЕ</li>
-                   <li>УСЛУГИ</li>
-                   <li>КЕЙСЫ</li>
-                   <li>ПРАЙС</li>  
-                   <li>ОТЗЫВЫ</li>  
-                   <li>КОНТАКТЫ</li>                   
+                   <li><a href="#t1">ОБО МНЕ</a></li>
+                   <li><a href="#t2">УСЛУГИ</a></li>
+                   <li><a href="#t3">КЕЙСЫ</a></li>
+                   <li><a href="#t4">ПРАЙС</a></li>  
+                   <li><a href="#t5">ОТЗЫВЫ</a></li>  
+                   <li><a href="#t6">КОНТАКТЫ</a></li>                   
                </ul>                                                        
             </div>
         </nav>        
     </header>
     
-    <div class="main">
+    <main>
+    
+    <section class="main">
+               
         <div class="titel_container">
             <h1>Привет <br> Я Павел Никачев</h1>
-            <h4>начинающий разработчик</h4>
-            <input type="submit" value="Обо мне">
-            <input type="submit" value="Мои работы">
+            <h4>начинающий разработчик</h4><br><br>
+            <input type="button" value="Обо мне">
+            <input type="button" value="Мои работы">
         </div>
-    </div> 
+        <div class="loader">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+       
+          
+    </section> 
      
      
     <div class="about_me">
-         <div class="menu_page"> ОБО МНЕ </div>
+         <div class="menu_page" id="t1"> ОБО МНЕ </div>
            <img src="img/Title_bar.jpg">
            <div class="foto_1">
            <img src="img/foto.png" alt="мое фото"></div>
@@ -54,7 +70,7 @@
      
        
         <div class="know_how">
-          <div class="menu_page"> ЧТО Я УМЕЮ </div>
+          <div class="menu_page" id="t2"> ЧТО Я УМЕЮ </div>
            <img src="img/Title_bar.jpg"><br>
             <div id="menu_0">
              <div id="menu_1">
@@ -78,7 +94,7 @@
         
         
          <div class="CASE">
-          <div class="menu_page"> КЕЙСЫ </div>
+          <div class="menu_page" id="t3"> КЕЙСЫ </div>
            <img src="img/Title_bar.jpg"><br><br>
             <div class="text">Кейс (от англ. сase) — это описание конкретной ситуации или случая в какой-либо сфере: социальной, экономической, медицинской и т. д.</div><br>
             
@@ -89,7 +105,7 @@
              <p>Хорошая компания</p><br>
               <p> <b> WEBSITE: </b></p><br>
              <p> http://www.somedomain.com</p><br>
-              <form action="page/new.html" target="_blank">
+              <form action="#">
                 <button>VISIT LIVE SITE</button>
               </form>
                   
@@ -101,7 +117,7 @@
          
          
          <div class="cost">
-             <div class="menu_page1"> Расчет стоимости </div>
+             <div class="menu_page1" id="t4"> Расчет стоимости </div>
              <div class="cost_m">
              <h4>ТИП САЙТА</h4>
              <form>
@@ -149,7 +165,7 @@
          <div class="menu_page"> НЕМНОГО СТАТИСТИКИ </div>            
              <img src="img/Title_bar.jpg"><br>
               <div class="STAT_1">
-               <div class="text_3">
+               <div class="text_3 ">
                  <img src="img/smile.png">  
                  <h2>120</h2><h5>СЧАСТЛИВЫХ КЛИЕНТОВ </h5>
                </div>
@@ -164,12 +180,13 @@
                <div class="text_3">
                  <img src="img/cup.png">  
                  <h2>23</h2><h5>НАГРАД ПОЛУЧЕНО</h5>
-               </div></div>
+               </div>
+            </div>
                
          </div>
          
         <div class="REVIEWS">
-          <div class="menu_page"> ОТЗЫВЫ </div>
+          <div class="menu_page" id="t5"> ОТЗЫВЫ </div>
            <img src="img/Title_bar.jpg">
             <div class="menu_page_im">
              <img src="img/foto.png">
@@ -181,7 +198,7 @@
         
         
         <div class="CONTACTS">
-          <div class="menu_page"> МОИ КОНТАКТЫ </div>
+          <div class="menu_page" id="t6"> МОИ КОНТАКТЫ </div>
             <img src="img/Title_bar.jpg"> <br><br><br><br>
              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis se </div>
                 <div class="text_blok">
@@ -202,11 +219,10 @@
             <div class="mes">     
              <div class="text_5"><h4>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h4></div>
              <div class="input">
-                 <form action="a" method="POST">
-                   <input type="text" name="firstname" value="" placeholder="Имя">
-                   <input type="text" name="Email" value="" placeholder="Email"><br><br>
-                   
-                   <textarea id="subject" name="message" placeholder="сообщение.." style="height:100px"></textarea>
+                 <form action="#" method="POST">
+                   <input type="text" name="firstname" value="" placeholder="Имя" required>
+                   <input type="text" name="Email" value="" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required><br><br>
+                   <textarea id="subject" name="message" placeholder="сообщение.." style="height:100px" required></textarea>
                    <br>  
                    <div class="input_2">
                     <input type="submit" value="Отправит">
@@ -229,6 +245,8 @@
         </iframe>
     </div>
      <div class="text_7">Copyright © 2022 Design by Web</div>
+     
+    </main>
 </body>
     
 </html>

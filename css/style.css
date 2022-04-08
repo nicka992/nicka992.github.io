@@ -4,39 +4,175 @@ body{
 
 nav{
     width: 100%;
-    height: 50px;
+    height: 40px;
     background: #333333;
+    position: fixed;
 }
+
 .logo{
     color: #fff;
     font-size: 22px;
-    line-height: 50px;
+    line-height: 40px;
     padding-left: 200px;
     float: left;
+    -webkit-animation:coming 0.9s;
+    -o-animation:coming 0.9s;
+    animation:coming 0.9s;
 }
+
 .menu{
     float: left;
-    padding-left: 320px;
+    padding-left: 300px;
+    
 } 
 .menu li{
     float: left;
-    line-height: 50px;
+    line-height: 40px;
     color: #fff;
     margin-right: 40px; 
     font-size: 14px;
     font-weight: bold;
+    -webkit-animation:topsh 0.4s ease forwards;
+    -o-animation:topsh 0.4s ease forwards;
+    animation:topsh 0.4s ease forwards;
+    opacity: 0;
+    }
+
 }
+.menu li:nth-child(1){
+    animation-delay: 0.6s;}
+.menu li:nth-child(2){
+    animation-delay: 0.9s;}
+.menu li:nth-child(3){
+    animation-delay: 1.2s;}
+.menu li:nth-child(4){
+    animation-delay: 1.5s;}
+.menu li:nth-child(5){
+    animation-delay: 1.8s;}
+.menu li:nth-child(6){
+    animation-delay: 2.1s;}
+
+.menu li a{
+    transition: all 0.4s ;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a:visited {
+    color: white;
+}
+
+.menu li a:hover {
+    color: #995511;
+}
+    
+.menu li a:active {
+    transform: scale(1.1);
+}   
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
 .main {
     width: 100%;
-    height: calc(100% - 50px);
+    height: 100%;
+    background-color: rgb(230,230,230);
     background: url(../img/program.png) 100% 100%/auto 100% no-repeat, 
         url(../img/fon-1.jpg) center/cover no-repeat;
 }
+
+.loader{
+    display: flex;
+    position: absolute;
+    left: 365px;
+    top: 352px;
+}
+
+.bar{
+    width: 4px;
+    height: 7px;
+    background-color: rgb(230,230,230);
+    margin-right: 4px;
+    animation: loader 1.3s  ease-in-out;
+    animation-iteration-count: 3;    
+}
+
+.loader .bar:nth-last-of-type(1){
+    animation-delay: 0.8s;
+}
+.loader .bar:nth-last-of-type(2){
+    animation-delay: 0.7s;
+}
+.loader .bar:nth-last-of-type(3){
+    animation-delay: 0.6s;
+}
+.loader .bar:nth-last-of-type(4){
+    animation-delay: 0.5s;
+}
+.loader .bar:nth-last-of-type(5){
+    animation-delay: 0.4s;
+}
+.loader .bar:nth-last-of-type(6){
+    animation-delay: 0.3s;
+}
+.loader .bar:nth-last-of-type(7){
+    animation-delay: 0.2s;
+}
+.loader .bar:nth-last-of-type(8){
+    animation-delay: 0.1s;
+}
+
+@keyframes loader{
+    
+       
+    0% {
+        background-color: rgb(230,230,230);
+        transform: scaleY(1);      
+    }
+    
+    
+    50% {
+        background-color: #2c384a;
+        transform: scaleY(3);
+    }
+    
+    100% {
+        background-color: rgb(230,230,230);
+        transform: scaleY(1);opacity: 0;         
+    }   
+}
+
+
+
 .titel_container{
     float: left;
-    margin: 90px 0px 0px 140px;
-    text-align: center
+    margin: 180px 0px 0px 190px;
+    color: #2c384a;
+    text-align: center;
+    opacity: 0;
+    -webkit-animation:titmove 0.9s ease forwards;
+    -o-animation:titmove 0.9s ease forwards;
+    animation:titmove 0.9s ease forwards;
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
 }
+    
+@keyframes titmove{
+    from{
+        opacity: 0;
+        margin-left: -150px; 
+    }
+    to{
+        opacity: 1;
+       margin-left: 190px;
+    }
+ }
+
+    
 .titel_container h1{
     font-size: 50px;
     font-weight: bold;    
@@ -55,23 +191,50 @@ nav{
     font-size: 14px;
     padding: 0px 16px;
     margin: 50px 10px 0px 10px;
+    transition: all 0.2s;
+    transform: scale(1);
 }
     
 .titel_container input:hover {
-    border: 2px solid #555;
-    box-shadow: 0 0 1px 1px #dcdde1;    
+    background: #344051;
+    color: white;       
 }
-.menu_page{
-    padding: 35px 0px 15px;
-    font-size: 24px;
-    font-weight: bold;
+
+.titel_container input:active {
+    box-shadow: 0 0 1px 1px #dcdde1;
+    transform: scale(1.1);
 }
+
 .text{
     font-size: 12px;
     font-weight: bold;
 }
 
+@keyframes coming{
+    from{opacity: 0;
+    }
+    to{opacity: 1;
+   }
+}
+
+@keyframes topsh{
+    from{opacity: 0;
+    margin-top: -7px; 
+    }
+    to{opacity: 1;
+    margin-top: 0px;
+    }
+}
+
+
+
                                                         /* ОБО МНЕ */
+.menu_page{
+    padding: 35px 0px 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
 .about_me{
     width: 100%;
     height: 500px;
@@ -104,14 +267,19 @@ nav{
 .about_me input:active {
   background-color: #e6e7eb;
   box-shadow: 0 1px #dcdde1;
-  transform: translateY(0.5px);
+  transform: scale(1.1);  
+  font-weight: bold;
 }
                                                         /* ЧТО Я УМЕЮ */
 .know_how{
     width: 100%;
     height: 400px;
     text-align: center;
-    background: url(../img/fon-2.jpg) 100% 100%;                
+    background: url(../img/fon-2.jpg);
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:auto 100%;
 }
 
 #menu_0 { 
@@ -129,7 +297,21 @@ nav{
 #menu_1 img{
      margin:65px 0 30px;
      height: 38px;
+    -webkit-animation:rov 3s infinite linear;
+    -o-animation:rov 3s infinite linear;
+    animation:rov 3s infinite linear;
+   
 }
+    
+@keyframes rov{
+    from{
+        transform:  rotateY(0deg);
+    }
+    to{
+       transform:  rotateY(360deg);
+    }
+ }
+
   
 #menu_1 b{
     color:#cf7600;
@@ -174,15 +356,17 @@ nav{
 }
 
 .text_CASE1 button:hover{
-    background-color: #3ca198;
-    box-shadow: 1px 1px 1px 1px #dcdde1;
+    color:#3ca198;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 0px 1px #3ca198;
 }
 
 .text_CASE1 button:active{
     color:#3ca198;
     background-color: #ffffff;
-    box-shadow: 0 1px #dcdde1;
-    transform: translateY(1px 1px);
+    box-shadow: 0px 0px 0px 1px #3ca198;
+    transform: scale(1.1);
+    font-weight: bold;
 }
 
                                             /*Расчет стоимости*/
@@ -233,17 +417,21 @@ nav{
 }
 
                                                  /*НЕМНОГО СТАТИСТИКИ*/
-.STATISTICS{
+.STATISTICS{    
     width: 100%;   
     height: 400px;
     text-align: center;
-    background: url(../img/fon-3.jpg) 100% 100%; 
+    background: url(../img/fon-3.jpg); 
+    background-attachment:fixed; 
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:auto 100%;
 }
 .STAT_1{
     margin-left: 300px;   
 }
 
-.text_3{ 
+.text_3{
         width:180px;
         float:left;         
 }
@@ -251,7 +439,22 @@ nav{
 .text_3 img{  
     margin:65px 0 30px;
     height: 32px;
-}
+    -webkit-animation:hover 3s infinite linear;
+    -o-animation:hover 3s infinite linear;
+    animation:hover 3s infinite linear;
+    }
+
+@keyframes hover{
+    0% {
+        transform: scale(1, 1);
+    }
+    50%{
+       transform: scale(1.2, 1.2);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+ }
 
 .text_3 h2{
     padding: 15px 0;
@@ -298,10 +501,14 @@ nav{
 }
 
 .input_2  input:hover {
-    border: 1px solid #555;
+    background: #FFF;
+    color: #111;
+    font-weight: bold;
+   } 
+
+.input_2  input:active {
     box-shadow: 0 0 1px 1px #dcdde1;
-    
-    
+    transform: scale(1.1);
 }
 
 .CONTACTS{
