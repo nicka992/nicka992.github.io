@@ -318,12 +318,13 @@ main{
 }
 
 .laine{
+    margin:0 0 45px 0;
     display: flex;
     justify-content: center;
 }
 
-#menu_1 img{
-     margin:65px 0 30px;
+.menu_1 img{
+     margin:25px 0 20px;
      height: 38px;
     -webkit-animation:rov 3s infinite linear;
     -o-animation:rov 3s infinite linear;
@@ -339,12 +340,285 @@ main{
     }
  }
   
-#menu_1 { 
-        max-width: 180px;
+.menu_1 { 
         margin: 5px;
         text-align:center;
         }
 
-#menu_1 b{
+.menu_1 b{
     color:#cf7600;
 }
+
+                                             /*КЕЙСЫ */
+
+.text_k{
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.CASE_img{
+     margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.text_CASE1{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.text_CASE1 b{
+    font-size: 18px;
+    font-weight: bold;
+}
+.text_CASE2 b{
+    font-size: 18px;
+    font-weight: bold;
+}
+.text_CASE2{
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+
+.text_CASE1 button{
+    background-color: #63b5ae;
+    color:#ffffff;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.text_CASE1 button:hover{
+    color:#3ca198;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 0px 1px #3ca198;
+}
+
+.text_CASE1 button:active{
+    color:#3ca198;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 0px 1px #3ca198;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+                                            /*Расчет стоимости*/
+
+.cost{
+    margin-top: 70px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.cost_m h4{
+     margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    padding:5px 0;
+}
+
+.cost_m select{
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+.Price1 h3{
+   margin-bottom: 20px; 
+  font-size: 16px;
+}
+
+.lin img{
+    margin: 30px 0 15px 0;
+    width: 100%; 
+     height: 2px;
+}
+
+.center{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    }
+
+                                                 /*НЕМНОГО СТАТИСТИКИ*/
+.STATISTICS{    
+    width: 100%;   
+    text-align: center;
+    background: url(../img/fon-3.jpg); 
+    background-attachment:fixed; 
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:auto 100%;
+}
+
+.text_3 img{  
+    margin:25px 0 20px;
+    height: 30px;
+    -webkit-animation:hover 3s infinite linear;
+    -o-animation:hover 3s infinite linear;
+    animation:hover 3s infinite linear;
+    }
+
+@keyframes hover{
+    0% {
+        transform: scale(1, 1);
+    }
+    50%{
+       transform: scale(1.3, 1.3);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+ }
+
+.text_3 h2{
+    padding: 8px 0;
+    font-size:xx-large;
+    font-weight: 900;
+}
+
+.text_3 h6{
+    font-weight: 700;
+    margin-bottom: 30px;}
+
+.menu_page_im{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 35px;    
+}
+
+.text11{
+    margin: 10px 0 ;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+                                               /*Контакты*/
+
+.CONTACTS{
+    color:#ffffff;
+    width: 100% 100%;
+    background: url(../img/fon-4.jpg) 100% 100%;
+}
+
+.text_14{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.text_4{
+    display: flex;
+    justify-content: center;
+}
+
+.text_4 img{
+    height: 30px;
+}
+
+.input_2 input{
+    width: 100px;
+    color:#ffffff;    
+    border: 1px solid #ffffff;
+    background: none;
+    border-radius: 5px;
+    padding: 5px 16px;
+    margin: 20px 0;
+}
+
+.input_2  input:hover {
+    background: #FFF;
+    color: #111;
+    font-weight: bold;
+   } 
+
+.input_2  input:active {
+    box-shadow: 0 0 1px 1px #dcdde1;
+    transform: scale(1.1);
+}
+
+.input_2{
+    display: flex;
+    justify-content: center;
+}
+
+.text_5{
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.col i{    display: flex;
+    justify-content: center;
+    
+}
+
+.zen{
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;    
+}
+
+.sob input{
+    width:250px;
+    padding:6px 10px;
+    border: none;
+    background-color: #f1f1f1;
+    margin: 0 5px;    
+}
+
+.sob textarea{
+    width:535px;
+    padding:6px 10px;
+    border:none;
+    background-color: #f1f1f1;    
+}
+
+.sob{
+    display: flex;
+    justify-content: center;    
+} 
+
+.end i{
+   font-size: 30px;
+   margin: 15px 0; 
+}
+
+ /*Отзыв*/
+
+.map{width: 100%; 
+}
+
+.text_7{
+    text-align: center;
+    padding: 7px;
+    width: 100%;
+    height: 30px;
+    background: #354051;    
+}
+
+.zen77{ 
+    text-align: center;    
+}
+
+.zen77 i{ 
+    font-size: 26px;
+    text-align: center;    
+}
+
+.ost{
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.ost i{font-size: 24px;}
+
