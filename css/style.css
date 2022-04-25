@@ -569,16 +569,18 @@ main{
 }
 
 .sob input{
-    width:250px;
-    padding:6px 10px;
+    width:340px;
+    max-width: 100%;
+    padding:5px 5px 5px 5px;    
     border: none;
     background-color: #f1f1f1;
     margin: 0 5px;    
 }
 
 .sob textarea{
-    width:535px;
-    padding:6px 10px;
+    width:610px;
+    max-width: 100%;
+    padding:5px 5px 5px 5px;
     border:none;
     background-color: #f1f1f1;    
 }
